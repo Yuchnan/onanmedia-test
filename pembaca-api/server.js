@@ -24,7 +24,7 @@ app.get("/pembaca", async (req, res) => {
         res.json(pembacaList)
     } catch (error) {
         console.error("Error fetching pembaca:", error)
-        res.status(500).json({ error: "Koneksi gagal" })
+        res.status(500).json({ error: "Gagal mengambil data" })
     }
 });
 
