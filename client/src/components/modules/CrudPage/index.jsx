@@ -6,13 +6,15 @@ import { useAtom } from 'jotai'
 const CrudPage = () => {
     const [isOpenModal, setIsOpenModal] = useAtom(isOpenModalAtom)
     return (
-        <div className='w-screen h-screen flex justify-center items-center'>
+        <div className='bg-white w-screen h-screen flex justify-center items-center'>
             <button
                 onClick={() => {
                     setIsOpenModal(true)
                 }}
-                className="btn btn-primary">
-                {isOpenModal ? "Modal Terbuka" : "Modal Tertutup"}
+                className="btn btn-primary"
+            >
+                Data Pembaca
+                {/* {isOpenModal ? "Modal Terbuka" : "Modal Tertutup"} */}
             </button>
         </div>
     )

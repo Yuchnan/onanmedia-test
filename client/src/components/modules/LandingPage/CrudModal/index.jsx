@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { useAtom } from 'jotai'
 import { isOpenModalAtom } from '@/jotai/atoms'
 import { MdClose } from "react-icons/md"
+import PembacaForm from './PembacaForm'
+import PembacaTable from './PembacaTable'
 
 const CrudModal = () => {
     const [isOpenModal, setIsOpenModal] = useAtom(isOpenModalAtom)
@@ -42,7 +44,9 @@ const CrudModal = () => {
                         >
                             <MdClose size={20} />
                         </button>
-                        <p>Data Pembaca</p>
+                        <p className='font-bold'>Data Pembaca</p>
+                        <PembacaForm />
+                        <PembacaTable />
                     </div>
                 </div>
             </div>
